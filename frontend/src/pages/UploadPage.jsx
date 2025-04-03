@@ -3,7 +3,7 @@ export default function UploadPage() {
     const file = e.target.files[0];
     const formData = new FormData();
     formData.append('image', file);
-    const res = await fetch('https://your-backend-url.onrender.com/process', {
+    const res = await fetch('https://tcm-tongue-app.onrender.com', {
       method: 'POST',
       body: formData
     });
